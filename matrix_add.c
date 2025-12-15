@@ -1,0 +1,42 @@
+ //matrix addition
+#include<stdio.h>
+int main()
+{
+	int A[10][10],B[10][10],C[10][10],r,c,i,j;
+	printf("enter row and coloumn size");
+	scanf("%d%d",&r,&c);
+	printf("enter matrix A values");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			scanf("%d",&A[i][j]);
+		}
+	}
+	printf("enter matrix B values");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			scanf("%d",&B[i][j]);
+		}
+	}
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			C[i][j]=A[i][j]+B[i][j];
+		}
+	}
+	printf("result matrix is  \n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf(" %d ",C[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+	
